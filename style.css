@@ -1,0 +1,36 @@
+body{
+    background-color: #fafafa;
+}
+.navbar-default{
+    min-height: 150px;
+    background-image: url('navimage.jpg');
+}
+
+#sidebarbutton{
+    width: 100%;
+    border: none;
+    color: black;
+    background-color: #fafafa;
+}
+
+#appimage{
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .sidenav{
+        height: auto;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1025px){
+    .sidenav{
+        padding-left: 0px;
+        margin-left: 0px;
+        text-align: center;
+    }
+}
+    
+    

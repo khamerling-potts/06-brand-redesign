@@ -1,1 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSE 204 Assignment 06 - Brand Redesign</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
 
+
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-3">craigslist</div>
+            <div class="col-sm-6 col-md-6">
+              <div class="row>">
+                <div class="col-sm-6">
+                  <div class="form-inline">
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-search"></span> 
+                      </div>
+                      <input type="text" class="form-control" placeholder="Search" id="searchbar">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-inline">
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-map-marker"></span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Location" id="locationbar">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-camera"></span> Post
+                    </button>
+                    <button type="button" class="btn btn-primary">Log in</button>
+                    <button type="button" class="btn btn-primary">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    
+<div class="container-fluid">
+  <div class="row">
+    
+    <div class="col-md-2 sidenav">
+      <div class="btn-group-vertical">
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="sidebarbutton">Community
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Activities</a></li>
+              <li><a href="#">Artists</a></li>
+              <li><a href="#">Childcare</a></li>
+              <li><a href="#">Classes</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">General</a></li>
+              <li><a href="#">Groups</a></li>
+              <li><a href="#">Local News</a></li>
+              <li><a href="#">Lost & Found</a></li>
+              <li><a href="#">Missed Connections</a></li>
+              <li><a href="#">Musicians</a></li>
+              <li><a href="#">Pets</a></li>
+              <li><a href="#">Politics</a></li>
+              <li><a href="#">Rants & Raves</a></li>
+              <li><a href="#">Rideshare</a></li>
+              <li><a href="#">Volunteers</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="sidebarbutton">Discussion Forums
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Android</a></li>
+              <li><a href="#">Apple</a></li>
+              <li><a href="#">Arts</a></li>
+              <li><a href="#">Atheist</a></li>
+              <li><a href="#">Beauty</a></li>
+              <li><a href="#">Bikes</a></li>
+              <li><a href="#">Celebs</a></li>
+              <li><a href="#">Comp</a></li>
+              <li><a href="#">Cosmos</a></li>
+              <li><a href="#">Diet</a></li>
+              <li><a href="#">Divorce</a></li>
+              <li><a href="#">Dying</a></li>
+              <li><a href="#">Eco</a></li>
+              <li><a href="#">Feedbk</a></li>
+              <li><a href="#">Film</a></li>
+              <li><a href="#">Fixit</a></li>
+              <li><a href="#">Food</a></li>
+              <li><a href="#">Frugal</a></li>
+              <li><a href="#">Gaming</a></li>
+              <li><a href="#">Garden</a></li>
+              <li><a href="#">Haiku</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Housing</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Jokes</a></li>
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Linux</a></li>
+              <li><a href="#">Manners</a></li>
+              <li><a href="#">Marriage</a></li>
+              <li><a href="#">Money</a></li>
+              <li><a href="#">Music</a></li>
+              <li><a href="#">Open</a></li>
+              <li><a href="#">Outdoor</a></li>
+              <li><a href="#">Parent</a></li>
+              <li><a href="#">Pets</a></li>
+              <li><a href="#">Philos</a></li>
+              <li><a href="#">Politics</a></li>
+              <li><a href="#">Psych</a></li>
+              <li><a href="#">Recover</a></li>
+              <li><a href="#">Religion</a></li>
+              <li><a href="#">Rofo</a></li>
+              <li><a href="#">Science</a></li>
+              <li><a href="#">Spirit</a></li>
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">Super</a></li>
+              <li><a href="#">Tax</a></li>
+              <li><a href="#">Travel</a></li>
+              <li><a href="#">TV</a></li>
+              <li><a href="#">Vegan</a></li>
+              <li><a href="#">Words</a></li>
+              <li><a href="#">Writing</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="sidebarbutton">For Sale
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Antiques</a></li>
+              <li><a href="#">Appliances</a></li>
+              <li><a href="#">Arts & Crafts</a></li>
+              <li><a href="#">ATV/UTV/SNO</a></li>
+              <li><a href="#">Auto Parts</a></li>
+              <li><a href="#">Aviation</a></li>
+              <li><a href="#">Baby & Kid</a></li>
+              <li><a href="#">Barter</a></li>
+              <li><a href="#">Beauty & HLTH</a></li>
+              <li><a href="#">Bike Parts</a></li>
+              <li><a href="#">Bikes</a></li>
+              <li><a href="#">Boats</a></li>
+              <li><a href="#">Books</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Cars & Trucks</a></li>
+              <li><a href="#">CDs/DVD/VHS</a></li>
+              <li><a href="#">Clothes & Acc</a></li>
+              <li><a href="#">Collectibles</a></li>
+              <li><a href="#">Computer Parts</a></li>
+              <li><a href="#">Computers</a></li>
+              <li><a href="#">Electronics</a></li>
+              <li><a href="#">Farm & Garden</a></li>
+              <li><a href="#">Free</a></li>
+              <li><a href="#">Furniture</a></li>
+              <li><a href="#">Garage Sale</a></li>
+              <li><a href="#">General</a></li>
+              <li><a href="#">Heavy Equip</a></li>
+              <li><a href="#">Household</a></li>
+              <li><a href="#">Jewelry</a></li>
+              <li><a href="#">Materials</a></li>
+              <li><a href="#">Motorcycle Parts</a></li>
+              <li><a href="#">Motorcycles</a></li>
+              <li><a href="#">Music Instr</a></li>
+              <li><a href="#">Photo & Video</a></li>
+              <li><a href="#">RVs & Camp</a></li>
+              <li><a href="#">Sporting</a></li>
+              <li><a href="#">Tickets</a></li>
+              <li><a href="#">Tools</a></li>
+              <li><a href="#">Toys & Games</a></li>
+              <li><a href="#">Trailers</a></li>
+              <li><a href="#">Video Gaming</a></li>
+              <li><a href="#">Wanted</a></li>
+              <li><a href="#">Wheels & Tires</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="sidebarbutton">Gigs
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Computer</a></li>
+            <li><a href="#">Creative</a></li>
+            <li><a href="#">Crew</a></li>
+            <li><a href="#">Domestic</a></li>
+            <li><a href="#">Event</a></li>
+            <li><a href="#">Labor</a></li>
+            <li><a href="#">Talent</a></li>
+            <li><a href="#">Writing</a></li>
+          </ul>
+      </div>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="sidebarbutton">Housing
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Apts/Housing</a></li>
+              <li><a href="#">Housing Swap</a></li>
+              <li><a href="#">Housing Wanted</a></li>
+              <li><a href="#">Office/Commercial</a></li>
+              <li><a href="#">Parking/Storage</a></li>
+              <li><a href="#">Real Estate</a></li>
+              <li><a href="#">Rooms/Shared</a></li>
+              <li><a href="#">Rooms Wanted</a></li>
+              <li><a href="#">Sublets/Temporary</a></li>
+              <li><a href="#">Vacation Rentals</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="sidebarbutton">Jobs
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Accounting & Finance</a></li>
+            <li><a href="#">Admin/Office</a></li>
+            <li><a href="#">Arch/Engineering/a></li>
+            <li><a href="#">Art/Media/Design</a></li>
+            <li><a href="#">Biotech/Science</a></li>
+            <li><a href="#">Business/Mgmt</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Etc/Misc</a></li>
+            <li><a href="#">Food/Bev/Hosp</a></li>
+            <li><a href="#">General Labor</a></li>
+            <li><a href="#">Government</a></li>
+            <li><a href="#">Human Resources</a></li>
+            <li><a href="#">Legal/Paralegal</a></li>
+            <li><a href="#">Manufacturing</a></li>
+            <li><a href="#">Marketing/PR/Ad</a></li>
+            <li><a href="#">Medical/Health</a></li>
+            <li><a href="#">Nonprofit Sector</a></li>
+            <li><a href="#">Real Estate</a></li>
+            <li><a href="#">Retail/Wholesale</a></li>
+            <li><a href="#">Sales/Biz Dev</a></li>
+            <li><a href="#">Salon/Spa/Fitness</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Skilled Trade/Craft</a></li>
+            <li><a href="#">Software/QA/DBA</a></li>
+            <li><a href="#">Systems/Network</a></li>
+            <li><a href="#">Technical Support</a></li>
+            <li><a href="#">Transport</a></li>
+            <li><a href="#">TV/Film/Video</a></li>
+            <li><a href="#">Web/Info Design</a></li>
+            <li><a href="#">Writing/Editing</a></li>
+          </ul>
+      </div>
+      <div class="resume">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="sidebarbutton">Resumes</button>
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="sidebarbutton">Services
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Automotive</a></li>
+          <li><a href="#">Beauty</a></li>
+          <li><a href="#">Cell/Mobile</a></li>
+          <li><a href="#">Computer</a></li>
+          <li><a href="#">Cycle</a></li>
+          <li><a href="#">Event</a></li>
+          <li><a href="#">Farm & Garden</a></li>
+          <li><a href="#">Financial</a></li>
+          <li><a href="#">Household</a></li>
+          <li><a href="#">Labor/Move</a></li>
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Marine</a></li>
+          <li><a href="#">Pet</a></li>
+          <li><a href="#">Real Estate</a></li>
+          <li><a href="#">Skilled Trade</a></li>
+          <li><a href="#">Sm Biz Ads</a></li>
+          <li><a href="#">Write/Ed/Tran</a></li>
+        </ul>
+      </div>
+    </div> <!-- button group vertical div -->
+  </div> <!-- side nav div-->
+  
+  <div class="col-md-8" style="background-color: blueviolet;">
+    
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>st louis, MO</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>Election Day is Tuesday, 11/3. Find your polling place and vote! </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+          <div class="jumbotron">
+            <h2>
+              Browse thousands of services, events, items for sale, and so much more!
+            </h2>
+            <p>Or, create an account and post your own!</p>
+            <button class="btn btn-primary">
+              Create a craigslist account
+            </button>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>
+          Get the official Craigslist app, now in the App Store
+        </h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <img src="craigslist-ios-app.jpg" id="appimage" alt="Craigslist iOS app" title="Craigslist iOS app" class="responsive">
+      </div>
+    </div>
+
+  </div> <!--col-md-8 blueviolet div-->
+  <div class="col-md-2" style="background-color:darkslateblue">Hi</div>
+  
+  </div> <!--row div-->
+</div>
+
+<footer class="container-fluid" style="background-color:lightcyan;">
+  footer
+</footer>
+
+</body>
+</html>
