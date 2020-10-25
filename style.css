@@ -13,16 +13,67 @@ body{
     background-color: #fafafa;
 }
 
-#appimage{
+#appimage, #ad1, #ad2, #ad3{
     width: 100%;
 }
+
+.maincontent{
+    text-align: center;
+}
+
+#footertable>tbody>tr>td {
+    padding: 0px;
+    border: none;
+}
+#footertable>thead>tr>th {
+    text-align: left;
+    border: none;
+}
+
+.main{
+    margin-top: 50px;
+}
+
+.brand{
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+}
+.navforms{
+    margin-top: 50px;
+    margin-right: 0px;
+}
+.navbuttons{
+    text-align: right;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+
+
+
 
 @media (max-width: 1024px) {
     .sidenav{
         height: auto;
         margin: auto;
         text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
+    .navbuttons{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    #searchbar, #locationbar{
+        width: 100%;
+        margin-right: 10px;
+        overflow: scroll;
+    }
+    
+   
+    
 }
 
 @media (min-width: 1025px){

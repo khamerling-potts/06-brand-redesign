@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href="style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -15,11 +16,11 @@
 
 <nav class="navbar navbar-default">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-3 col-md-3">craigslist</div>
-            <div class="col-sm-6 col-md-6">
+        <div class="row navrow">
+            <div class="col-xs-2 col-sm-3 col-md-3 brand">craigslist</div>
+            <div class="col-xs-6 col-sm-6 col-md-6 navforms">
               <div class="row>">
-                <div class="col-sm-6">
+                <div class="col-xs-6 col-sm-6">
                   <div class="form-inline">
                     <div class="input-group">
                       <div class="input-group-addon">
@@ -29,10 +30,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-xs-6 col-sm-6">
                   <div class="form-inline">
                     <div class="input-group">
-                      <div class="input-group-addon">
+                      <div class="input-group-addon locationaddon">
                         <span class="glyphicon glyphicon-map-marker"></span>
                       </div>
                       <input type="text" class="form-control" placeholder="Location" id="locationbar">
@@ -41,13 +42,13 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3 col-md-3">
+            <div class="col-sm-3 col-md-3 navbuttons">
                 <div class="btn-group">
-                    <button type="button" class="btn btn-primary">
+                    <button type="button" class="btn btn-primary btn-sm">
                         <span class="glyphicon glyphicon-camera"></span> Post
                     </button>
-                    <button type="button" class="btn btn-primary">Log in</button>
-                    <button type="button" class="btn btn-primary">Sign up</button>
+                    <button type="button" class="btn btn-primary btn-sm">Log in</button>
+                    <button type="button" class="btn btn-primary btn-sm">Sign up</button>
                 </div>
             </div>
         </div>
@@ -138,6 +139,9 @@
               <li><a href="#">Words</a></li>
               <li><a href="#">Writing</a></li>
             </ul>
+        </div>
+        <div class="events">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="sidebarbutton">Events</button>
         </div>
         <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="sidebarbutton">For Sale
@@ -284,21 +288,21 @@
     </div> <!-- button group vertical div -->
   </div> <!-- side nav div-->
   
-  <div class="col-md-8" style="background-color: blueviolet;">
+  <div class="col-md-8 maincontent">
     
-    <div class="row">
+    <div class="row stl">
       <div class="col-md-12 text-center">
-        <p>st louis, MO</p>
+        <h3>st louis, MO</h3>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row main">
       <div class="col-md-12 text-center">
         <p>Election Day is Tuesday, 11/3. Find your polling place and vote! </p>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row main">
       <div class="col-md-12">
           <div class="jumbotron">
             <h2>
@@ -312,7 +316,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row appheader main">
       <div class="col-md-12">
         <h2>
           Get the official Craigslist app, now in the App Store
@@ -320,20 +324,362 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row appimg">
       <div class="col-md-12">
         <img src="craigslist-ios-app.jpg" id="appimage" alt="Craigslist iOS app" title="Craigslist iOS app" class="responsive">
       </div>
     </div>
 
+    <div class="row appbtns">
+      <div class="col-xs-6 col-md-6">
+        <button class="btn btn-primary">
+          Learn more
+        </button>
+      </div>
+      <div class="col-xs-6 col-md-6">
+        <button class="btn btn-primary">
+          Download for iOS
+        </button>
+      </div>
+    </div>
+
+    <div class="row sponsorheading main">
+      <div class="col-md-12">
+        See today's sponsored listings
+      </div>
+    </div>
+
+    <div class="row ads">
+      <div class="col-xs-4 col-md-4">
+        
+        <div class="row">
+          <div class="col-md-12">
+            <img src="ad1.jpg" id="ad1" alt="Sponsored ad 1" title="Sponsored ad 1" class="responsive">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+              <button class="btn btn-primary btn-xs">
+                <span class="glyphicon glyphicon-star"></span>
+              </button>
+              1bd/1ba bachelor pad for rent in the heart of Downtown St. Louis
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <p>
+            <button class="btn btn-primary btn-xs">
+              $1500
+            </button>
+            1bd - 1000ft<sup>2</sup> - St. Louis
+          </p>
+        </div>
+
+      </div>
+
+      <div class="col-xs-4 col-md-4">
+        
+        <div class="row">
+          <div class="col-md-12">
+            <img src="ad2.jpg" id="ad2" alt="Sponsored ad 2" title="Sponsored ad 2" class="responsive">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+              <button class="btn btn-primary btn-xs">
+                <span class="glyphicon glyphicon-star"></span>
+              </button>
+              2016 white Toyota Rav 4 with excellent mileage
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <p>
+            <button class="btn btn-primary btn-xs">
+              $26000
+            </button>
+            2016 - Toyota Rav4 - 25,000 mi - St. Louis
+          </p>
+        </div>
+
+      </div>
+
+      <div class="col-xs-4 col-md-4">
+        
+        <div class="row">
+          <div class="col-md-12">
+            <img src="ad3.jpg" id="ad3" alt="Sponsored ad 3" title="Sponsored ad 3" class="responsive">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+              <button class="btn btn-primary btn-xs">
+                <span class="glyphicon glyphicon-star"></span>
+              </button>
+              One time programming tutor wanted! Proficiency in Java and HTML required
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <p>
+            <button class="btn btn-primary btn-xs">
+              $100
+            </button>
+            Gig - Programming - St. Louis
+          </p>
+        </div>
+
+      </div>
+    </div>
+
   </div> <!--col-md-8 blueviolet div-->
-  <div class="col-md-2" style="background-color:darkslateblue">Hi</div>
   
+  <div class="col-md-2 sidenav">
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="sidebarbutton">English
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Dansk</a></li>
+        <li><a href="#">Deutsch</a></li>
+        <li><a href="#">English</a></li>
+        <li><a href="#">Español</a></li>
+        <li><a href="#">Français</a></li>
+        <li><a href="#">Italiano</a></li>
+        <li><a href="#">Português</a></li>
+        <li><a href="#">Suomi</a></li>
+        <li><a href="#">Svenska</a></li>
+        <li><a href="#">Tiếng Việt</a></li>
+        <li><a href="#">Türkçe</a></li>
+        <li><a href="#">Pусский</a></li>
+        <li><a href="#">中文</a></li>
+        <li><a href="#">日本語</a></li>
+        <li><a href="#">Português</a></li>
+        <li><a href="#">한국인</a></li>
+      </ul> 
+    </div>
+
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="sidebarbutton">Nearby areas
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Bloomington</a></li>
+        <li><a href="#">Bowling Green</a></li>
+        <li><a href="#">Chambana</a></li>
+        <li><a href="#">Clarksville</a></li>
+        <li><a href="#">Columbia</a></li>
+        <li><a href="#">Decatur</a></li>
+        <li><a href="#">Evansville</a></li>
+        <li><a href="#">Indianopolis</a></li>
+        <li><a href="#">Iowa City</a></li>
+        <li><a href="#">Jackson</a></li>
+        <li><a href="#">Jonesboro</a></li>
+        <li><a href="#">Kansas City</a></li>
+        <li><a href="#">Kirksville</a></li>
+        <li><a href="#">Lake of Ozarks</a></li>
+        <li><a href="#">La Salle Co</a></li>
+        <li><a href="#">Mattoon</a></li>
+        <li><a href="#">Memphis</a></li>
+        <li><a href="#">Owensboro</a></li>
+        <li><a href="#">Peoria</a></li>
+        <li><a href="#">Quad Cities</a></li>
+        <li><a href="#">Southeast IA</a></li>
+        <li><a href="#">Southeast MO</a></li>
+        <li><a href="#">Southern IL</a></li>
+        <li><a href="#">Springfield</a></li>
+        <li><a href="#">Terre Haute</a></li>
+        <li><a href="#">Tippecanoe</a></li>
+        <li><a href="#">Western IL</a></li>
+        <li><a href="#">Western KY</a></li>
+      </ul> 
+    </div>
+
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="sidebarbutton">US Cities
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Atlanta</a></li>
+        <li><a href="#">Austin</a></li>
+        <li><a href="#">Boston</a></li>
+        <li><a href="#">Chicago</a></li>
+        <li><a href="#">Dallas</a></li>
+        <li><a href="#">Denver</a></li>
+        <li><a href="#">Detoir</a></li>
+        <li><a href="#">Houston</a></li>
+        <li><a href="#">Las Vegas</a></li>
+        <li><a href="#">Miami</a></li>
+        <li><a href="#">Minneapolis</a></li>
+        <li><a href="#">New York</a></li>
+        <li><a href="#">Orange CO</a></li>
+        <li><a href="#">Philadelphia</a></li>
+        <li><a href="#">Phoenix</a></li>
+        <li><a href="#">Portland</a></li>
+        <li><a href="#">Raleigh</a></li>
+        <li><a href="#">Sacramento</a></li>
+        <li><a href="#">San Diego</a></li>
+        <li><a href="#">Seattle</a></li>
+        <li><a href="#">SF Bay Area</a></li>
+        <li><a href="#">Washington DC</a></li>
+      </ul> 
+    </div>
+
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="sidebarbutton">US States
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">AL</a></li>
+        <li><a href="#">AK</a></li>
+        <li><a href="#">AZ</a></li>
+        <li><a href="#">AR</a></li>
+        <li><a href="#">CA</a></li>
+        <li><a href="#">CO</a></li>
+        <li><a href="#">CT</a></li>
+        <li><a href="#">DE</a></li>
+        <li><a href="#">FL</a></li>
+        <li><a href="#">GA</a></li>
+        <li><a href="#">HI</a></li>
+        <li><a href="#">ID</a></li>
+        <li><a href="#">IL</a></li>
+        <li><a href="#">IN</a></li>
+        <li><a href="#">IA</a></li>
+        <li><a href="#">KS</a></li>
+        <li><a href="#">KY</a></li>
+        <li><a href="#">LA</a></li>
+        <li><a href="#">ME</a></li>
+        <li><a href="#">MD</a></li>
+        <li><a href="#">MA</a></li>
+        <li><a href="#">MI</a></li>
+        <li><a href="#">MN</a></li>
+        <li><a href="#">MS</a></li>
+        <li><a href="#">MO</a></li>
+        <li><a href="#">MT</a></li>
+        <li><a href="#">NE</a></li>
+        <li><a href="#">NV</a></li>
+        <li><a href="#">NH</a></li>
+        <li><a href="#">NJ</a></li>
+        <li><a href="#">NM</a></li>
+        <li><a href="#">NY</a></li>
+        <li><a href="#">NC</a></li>
+        <li><a href="#">ND</a></li>
+        <li><a href="#">OH</a></li>
+        <li><a href="#">OK</a></li>
+        <li><a href="#">OR</a></li>
+        <li><a href="#">PA</a></li>
+        <li><a href="#">RI</a></li>
+        <li><a href="#">SC</a></li>
+        <li><a href="#">SD</a></li>
+        <li><a href="#">TN</a></li>
+        <li><a href="#">TX</a></li>
+        <li><a href="#">UT</a></li>
+        <li><a href="#">VT</a></li>
+        <li><a href="#">VA</a></li>
+        <li><a href="#">WA</a></li>
+        <li><a href="#">WV</a></li>
+        <li><a href="#">WI</a></li>
+        <li><a href="#">WY</a></li>
+      </ul> 
+    </div>
+
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="sidebarbutton">Canada
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Calgary</a></li>
+        <li><a href="#">Edmonton</a></li>
+        <li><a href="#">Halifax</a></li>
+        <li><a href="#">Montreal</a></li>
+        <li><a href="#">Ottowa</a></li>
+        <li><a href="#">Saskatoon</a></li>
+        <li><a href="#">Toronto</a></li>
+        <li><a href="#">Vancouver</a></li>
+        <li><a href="#">Victoria</a></li>
+        <li><a href="#">Winnipeg</a></li>
+      </ul> 
+    </div>
+
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="sidebarbutton">CL Worldwide
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Africa</a></li>
+        <li><a href="#">Americas</a></li>
+        <li><a href="#">Asia</a></li>
+        <li><a href="#">Europe</a></li>
+        <li><a href="#">Middle East</a></li>
+        <li><a href="#">Oceania</a></li>
+      </ul> 
+    </div>
+
+  </div>
+    
   </div> <!--row div-->
 </div>
 
 <footer class="container-fluid" style="background-color:lightcyan;">
-  footer
+  
+  <div class="row">
+    <div class="col-xs-3 col-md-3">
+      <form class="emailform">
+        <label for="email">SIGN UP FOR OUR NEWSLETTER!</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="email" placeholder="Enter email address here">
+          <div class="input-group-addon">
+            <span class="glyphicon glyphicon-send"></span>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-xs-9 col-md-9">
+      <div class="table-responsive"> <!--learned about responsive tabled from w3schools-->
+        <table class="table table-sm" id="footertable">
+          <thead>
+            <tr>
+              <th>About</th>
+              <th>Help</th>
+              <th>Additional links</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>About Craigslist</td>
+              <td>Help, FAQ, abuse, legal</td>
+              <td>Best-of-craislist</td>
+            </tr>
+            <tr>
+              <td>Open Source</td>
+              <td>Avoid scams and fraud</td>
+              <td>"Craigslist Joe"</td>
+            </tr>
+            <tr>
+              <td>System status</td>
+              <td>Personal safety tips</td>
+              <td>Craig Newmark Philanthropies</td>
+            </tr>
+            <tr>
+              <td>Craigslist app</td>
+              <td>Terms of use</td>
+              <td>Craigslist blog</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Privacy policy</td>
+              <td>Mobile</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
 </footer>
 
 </body>
