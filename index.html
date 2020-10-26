@@ -9,6 +9,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href="style.css" type="text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -44,11 +45,11 @@
             </div>
             <div class="col-sm-3 col-md-3 navbuttons">
                 <div class="btn-group">
-                    <button type="button" class="btn btn-primary btn-sm">
+                    <button type="button" class="btn btn-primary btn-sm headerbutton">
                         <span class="glyphicon glyphicon-camera"></span> Post
                     </button>
-                    <button type="button" class="btn btn-primary btn-sm">Log in</button>
-                    <button type="button" class="btn btn-primary btn-sm">Sign up</button>
+                    <button type="button" class="btn btn-primary btn-sm headerbutton">Log in</button>
+                    <button type="button" class="btn btn-primary btn-sm headerbutton">Sign up</button>
                 </div>
             </div>
         </div>
@@ -296,10 +297,13 @@
       </div>
     </div>
 
-    <div class="row main">
+    <div class="row main election">
       <div class="col-md-12 text-center">
-        <p>Election Day is Tuesday, 11/3. Find your polling place and vote! </p>
+        <p><h2>Election Day is Tuesday, 11/3. Find your polling place and vote! </h2></p>
       </div>
+      <button class="btn btn-primary pollbutton">
+        Find your polling place
+      </button>
     </div>
 
     <div class="row main">
@@ -308,8 +312,8 @@
             <h2>
               Browse thousands of services, events, items for sale, and so much more!
             </h2>
-            <p>Or, create an account and post your own!</p>
-            <button class="btn btn-primary">
+            <p class="createaccount">Or, create an account and post your own!</p>
+            <button class="btn btn-primary createaccountbutton">
               Create a craigslist account
             </button>
           </div>
@@ -332,12 +336,12 @@
 
     <div class="row appbtns">
       <div class="col-xs-6 col-md-6">
-        <button class="btn btn-primary">
+        <button class="btn btn-primary appbutton">
           Learn more
         </button>
       </div>
       <div class="col-xs-6 col-md-6">
-        <button class="btn btn-primary">
+        <button class="btn btn-primary appbutton">
           Download for iOS
         </button>
       </div>
@@ -350,7 +354,7 @@
     </div>
 
     <div class="row ads">
-      <div class="col-xs-4 col-md-4">
+      <div class="col-xs-4 col-md-4 ad">
         
         <div class="row">
           <div class="col-md-12">
@@ -361,7 +365,7 @@
         <div class="row">
           <div class="col-md-12">
             <p>
-              <button class="btn btn-primary btn-xs">
+              <button class="btn btn-primary btn-xs star">
                 <span class="glyphicon glyphicon-star"></span>
               </button>
               1bd/1ba bachelor pad for rent in the heart of Downtown St. Louis
@@ -371,7 +375,7 @@
 
         <div class="row">
           <p>
-            <button class="btn btn-primary btn-xs">
+            <button class="btn btn-primary btn-xs money">
               $1500
             </button>
             1bd - 1000ft<sup>2</sup> - St. Louis
@@ -380,7 +384,7 @@
 
       </div>
 
-      <div class="col-xs-4 col-md-4">
+      <div class="col-xs-4 col-md-4 ad">
         
         <div class="row">
           <div class="col-md-12">
@@ -391,7 +395,7 @@
         <div class="row">
           <div class="col-md-12">
             <p>
-              <button class="btn btn-primary btn-xs">
+              <button class="btn btn-primary btn-xs star">
                 <span class="glyphicon glyphicon-star"></span>
               </button>
               2016 white Toyota Rav 4 with excellent mileage
@@ -401,7 +405,7 @@
 
         <div class="row">
           <p>
-            <button class="btn btn-primary btn-xs">
+            <button class="btn btn-primary btn-xs money">
               $26000
             </button>
             2016 - Toyota Rav4 - 25,000 mi - St. Louis
@@ -410,7 +414,7 @@
 
       </div>
 
-      <div class="col-xs-4 col-md-4">
+      <div class="col-xs-4 col-md-4 ad">
         
         <div class="row">
           <div class="col-md-12">
@@ -421,7 +425,7 @@
         <div class="row">
           <div class="col-md-12">
             <p>
-              <button class="btn btn-primary btn-xs">
+              <button class="btn btn-primary btn-xs star">
                 <span class="glyphicon glyphicon-star"></span>
               </button>
               One time programming tutor wanted! Proficiency in Java and HTML required
@@ -431,7 +435,7 @@
 
         <div class="row">
           <p>
-            <button class="btn btn-primary btn-xs">
+            <button class="btn btn-primary btn-xs money">
               $100
             </button>
             Gig - Programming - St. Louis
@@ -623,12 +627,12 @@
   </div> <!--row div-->
 </div>
 
-<footer class="container-fluid" style="background-color:lightcyan;">
+<footer class="container-fluid">
   
-  <div class="row">
-    <div class="col-xs-3 col-md-3">
+  <div class="row footerrow">
+    <div class="col-xs-3 col-md-3 newsletter">
       <form class="emailform">
-        <label for="email">SIGN UP FOR OUR NEWSLETTER!</label>
+        <label for="email">SIGN UP FOR OUR NEWSLETTER FOR EXCLUSIVE DEALS!</label>
         <div class="input-group">
           <input type="text" class="form-control" id="email" placeholder="Enter email address here">
           <div class="input-group-addon">
@@ -638,7 +642,7 @@
       </form>
     </div>
 
-    <div class="col-xs-9 col-md-9">
+    <div class="col-xs-9 col-md-9 tablecol">
       <div class="table-responsive"> <!--learned about responsive tabled from w3schools-->
         <table class="table table-sm" id="footertable">
           <thead>
