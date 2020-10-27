@@ -66,6 +66,7 @@ body{
     margin: 20px;
     border:solid 4px #333333;
     background-color: #fafafa;
+    font-size: larger;
 }
 .ads{
     display: flex;
@@ -98,7 +99,7 @@ footer{
 .pollbutton, .headerbutton, .star{
     background-color: #264268;
 }
-.pollbutton, .createaccountbutton, .appbutton{
+.pollbutton, .createaccountbutton, .appbutton, .craigbutton{
     border-radius: 16px;
     background-color: #264268;
 }
@@ -119,6 +120,16 @@ footer{
 }
 .glyphicon-star{
    color: #f6e785; 
+}
+.craigtext1, .craigtext2, .craigtext3{
+    font-size: larger;
+}
+.craigtext3{
+    font-weight: bold;
+}
+.founder{
+    margin-bottom: 80px;
+    margin-top: 80px;
 }
 
 @media (max-width: 1024px) {
